@@ -38,7 +38,9 @@ const FiveDaysForecast = () => {
           weatherData.slice(0, 5).map(item => {
             return (
               <li key={item.dt} className="WeatherApp__fiveDaysForecastItem">
-                <p className="WeatherApp__fiveDaysForecastDay">{item.dt_txt}</p>
+                <p className="WeatherApp__fiveDaysForecastDay">
+                  {moment.unix(item.dt).format("dddd : h:mm")}
+                </p>
                 <img
                   className="WeatherApp__fiveDaysForecastItemIcon"
                   src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
