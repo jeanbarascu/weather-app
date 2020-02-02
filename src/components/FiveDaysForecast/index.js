@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import sessionUtils from "./../../utils/session.utils";
 import weatherApiUtils from "./../../utils/weatherApi.utils";
-import Moment from "moment";
+import moment from "moment";
 import {
   API_KEY,
   FIVE_DAYS_WEATHER_API_ENDPOINT
