@@ -1,11 +1,15 @@
 import React from "react";
 import refreshIcon from "./refresh_icon.svg";
-import "./refreshIcon.css";
+import "./RefreshIcon.css";
 
-const Reload = () => {
+const RefreshIcon = () => {
   return (
-    <img src={refreshIcon} className="WeatherApp__reload" alt="Reload Icon" />
+    <img
+      src={refreshIcon}
+      className="WeatherApp__refreshIcon"
+      alt="RefreshIcon Icon"
+    />
   );
 };
 
-export default Reload;
+export default RefreshIcon;
