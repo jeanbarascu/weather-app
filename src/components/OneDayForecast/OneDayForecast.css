@@ -1,0 +1,33 @@
+.WeatherApp__oneDayForecastContent {
+  width: 100%;
+}
+
+.WeatherApp__oneDayForecastImg {
+  width: 100px;
+  height: auto;
+}
+
+.WeatherApp__oneDayForecastTitle {
+  width: 100%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700px;
+}
+
+.WeatherApp__oneDayForecastCurrentTemp {
+  display: block;
+  margin-bottom: 40px;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.WeatherApp__oneDayForecastMinMaxTemp {
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
