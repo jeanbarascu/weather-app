@@ -1,0 +1,36 @@
+.WeatherApp__fiveDaysForecastContent {
+  margin-top: 72px;
+}
+
+.WeatherApp__fiveDaysForecastItems {
+  padding: 0;
+  margin: 0;
+}
+.WeatherApp__fiveDaysForecastItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.WeatherApp__fiveDaysForecastDay {
+  width: 20%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.WeatherApp__fiveDaysForecastItemIcon {
+  width: 48px;
+  height: 48px;
+}
+
+.WeatherApp__fiveDaysForecastItemMinTemp {
+  width: 10%;
+  color: #fff;
+}
+
+.WeatherApp__fiveDaysForecastItemMaxTemp {
+  width: 10%;
+  color: #f8e71c;
+}

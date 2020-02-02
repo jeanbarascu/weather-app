@@ -1,5 +1,5 @@
 .WeatherApp__container {
-  margin: 64px 24px;
+  margin: 64px 24px 0 24px;
   text-align: center;
 
   @media screen and (min-width: 1280px) {
