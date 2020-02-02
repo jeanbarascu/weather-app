@@ -1,6 +1,6 @@
 class Weather {
-  fahrenheitToCelsius = temp => {
-    let tempInCelsius = ((temp - 32) * 5) / 9;
+  kelvinToCelsius = temp => {
+    let tempInCelsius = temp - 273.15;
 
     return tempInCelsius.toFixed();
   };

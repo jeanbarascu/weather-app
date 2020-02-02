@@ -23,7 +23,6 @@ const OneDayForecast = () => {
       results = await axios.get(
         `${CURRENT_WEATHER_API_ENDPOINT}${city}&appid=${API_KEY}`
       );
-      console.log(results);
     } catch (err) {
       console.log(err);
     }
@@ -40,7 +39,7 @@ const OneDayForecast = () => {
   }, []);
 
   return (
-    <>
+    <div className="WeatherApp__oneDayForecastContent">
       <img
         className="WeatherApp__oneDayForecastImg"
         src={`http://openweathermap.org/img/wn/${
@@ -48,17 +47,15 @@ const OneDayForecast = () => {
         }@2x.png`}
         alt="Wheater Icon"
       />
-      <div className="WeatherApp__oneDayForecastContent">
-        <h1 className="WeatherApp__oneDayForecastTitle">{weatherDesc}</h1>
-        <span className="WeatherApp__oneDayForecastCurrentTemp">
-          {weatherApiUtils.fahrenheitToCelsius(currentTemp)} &#8451;
-        </span>
-        <span className="WeatherApp__oneDayForecastMinMaxTemp">
-          min. {weatherApiUtils.fahrenheitToCelsius(minTemp)} &#8451; / max.{" "}
-          {weatherApiUtils.fahrenheitToCelsius(maxTemp)} &#8451;
-        </span>
-      </div>
-    </>
+      <h1 className="WeatherApp__oneDayForecastTitle">{weatherDesc}</h1>
+      <span className="WeatherApp__oneDayForecastCurrentTemp">
+        {weatherApiUtils.kelvinToCelsius(currentTemp)} &#8451;
+      </span>
+      <span className="WeatherApp__oneDayForecastMinMaxTemp">
+        min. {weatherApiUtils.kelvinToCelsius(minTemp)} &#8451; / max.{" "}
+        {weatherApiUtils.kelvinToCelsius(maxTemp)} &#8451;
+      </span>
+    </div>
   );
 };
 

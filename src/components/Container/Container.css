@@ -1,9 +1,15 @@
 .WeatherApp__container {
   margin: 64px 24px 0 24px;
   text-align: center;
+}
 
-  @media screen and (min-width: 1280px) {
-    width: 1200px;
-    margin: 0 auto;
+@media screen and (min-width: 1280px) {
+  .WeatherApp__container {
+    margin: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
   }
 }

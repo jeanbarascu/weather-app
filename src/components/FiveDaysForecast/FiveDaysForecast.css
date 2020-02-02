@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
 }
+
 .WeatherApp__fiveDaysForecastItem {
   display: flex;
   justify-content: space-between;
@@ -28,9 +29,43 @@
 .WeatherApp__fiveDaysForecastItemMinTemp {
   width: 10%;
   color: #fff;
+  font-weight: 700;
 }
 
 .WeatherApp__fiveDaysForecastItemMaxTemp {
   width: 10%;
   color: #f8e71c;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .WeatherApp__fiveDaysForecastContent {
+    margin-left: 128px;
+    margin-right: 128px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .WeatherApp__fiveDaysForecastContent {
+    width: 75%;
+    margin-left: 128px;
+    margin-right: 128px;
+  }
+
+  .WeatherApp__fiveDaysForecastItems {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .WeatherApp__fiveDaysForecastDay {
+    color: #4a90e2;
+  }
+
+  .WeatherApp__fiveDaysForecastItemMinTemp {
+    color: #4a90e2;
+  }
+
+  .WeatherApp__fiveDaysForecastItemMaxTemp {
+    color: red;
+  }
 }
